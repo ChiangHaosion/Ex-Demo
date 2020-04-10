@@ -1,3 +1,4 @@
+import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -6,10 +7,8 @@ import org.slf4j.LoggerFactory;
  * @Author HaosionChiang
  * @Date 2020/3/29
  **/
+@Slf4j
 public class OldTest {
-
-    private static Logger logger = LoggerFactory.getLogger(OldTest.class);
-
 
     @Test
     public void test() {
@@ -21,11 +20,11 @@ public class OldTest {
         Thread t1 = new Thread(t);
         Thread t2 = new Thread(t);
         //开始线程
-        logger.info("开始啦！！");
+        log.info("开始啦！！");
         t0.start();
         t1.start();
         t2.start();
-        logger.info("结束啦！！");
+        log.info("结束啦！！");
 
     }
 
