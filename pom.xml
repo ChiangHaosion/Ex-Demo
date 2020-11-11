@@ -5,17 +5,20 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>Ex-Demo</artifactId>
+    <artifactId>EX-DEMO</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <modules>
-        <module>mulThread</module>
         <module>jdk8</module>
         <module>mybatis-plus</module>
         <module>jpush</module>
-        <module>OkHttp</module>
+        <module>TX</module>
         <module>juc</module>
+        <module>DP</module>
+        <module>cron</module>
+        <module>scala-demo</module>
+        <module>mapstruct</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
